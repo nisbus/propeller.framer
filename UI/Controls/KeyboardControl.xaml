@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="nisbus.Propeller.Demo.Controls.KeyboardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="25"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Ellipse x:Name="ellipse1" Height="20" Width="20" Grid.Column="0">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value1}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value1}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse2" Height="20" Width="20" Grid.Column="1">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value2}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value2}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse3" Height="20" Width="20" Grid.Column="2">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value3}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value3}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4" Height="20" Width="20" Grid.Column="3">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value4}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value4}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse5" Height="20" Width="20" Grid.Column="4">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value5}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value5}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse6" Height="20" Width="20" Grid.Column="5">
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value6}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value6}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse7" Height="20" Width="20" Grid.Column="6" >
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value7}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value7}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <Ellipse x:Name="ellipse8" Height="20" Width="20" Grid.Column="7" >
+            <Ellipse.Style>
+                <Style >
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Value8}" Value="True">
+                            <Setter Property="Ellipse.Fill" Value="Green"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=Value8}" Value="False">
+                            <Setter Property="Ellipse.Fill" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Ellipse.Style>
+        </Ellipse>
+        <TextBlock Grid.ColumnSpan="8" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Text="{Binding TextValue}"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="FrameParsingTests" id="388161ba-2b4a-4b5f-99e7-391a8ce11660" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>Tests for parsing strings to PropellerFrames</Description>
+    <TestLinks>
+      <TestLink id="30e42458-6d7c-3d8c-c5b8-989f6e294906" name="H48CRegExpTestWithNegativeValuesTest" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="9a5ba7e7-8d3d-a547-b2dc-403094c0da62" name="TestCreateH48CFrameFromString" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="a8c853c8-31b7-7faa-93b8-fb6087d1527f" name="H48CRegExpMatchTest" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="0431bd10-7079-f649-258a-01a0b99f8616" name="ParseAStringOfBinariesToABinaryArrayFrame" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="6ec09d3d-bf5a-6cd2-eac7-395700ee5a27" name="ParseOneToBinaryFrameTest" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="0d38df2f-25f7-e4e6-6aa7-a555bd0d4df0" name="ParseInvalidStringToBinaryFrameTest" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="f7dfeb38-f8cd-f228-2139-e9d8a0e3ce26" name="ParseZeroToBinaryFrameTest" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="139806f4-81bb-79c1-43f3-2d5e4e764973" name="ParseInvalidStringToBinaryArrayFrame_ResultsInException" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="PropellerFramerTests" id="6924a563-eb2d-49aa-8b53-387decbd4594" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>Tests the parsing/framing of the incoming streams</Description>
+    <TestLinks>
+      <TestLink id="dfad9e24-4ada-d999-4204-e1dc7b604f0f" name="TestParsingPartialFrames_ShouldLeaveTheProcessedFramesAt_2" storage="propellerframes.unittests\bin\debug\nisbus.propeller.frames.unittests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="d54fd4a8-541d-4799-a2df-245eb52a7484" name="Local" storage="local.testsettings" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+</TestLists>
