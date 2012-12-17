@@ -38,8 +38,8 @@ This will print out any data that you are sending from your propeller to the tex
 #Implemented frames
 The frames in the library now are:
 
-+RawFrame : gets raised for each buffer received from the serialport.  
-+BinaryFrame : Gets raised for each instance of 1 & 0 received (i.e. a single button)  
-+BinaryArrayFrame : Gets raised for arrays of binaries received (i.e. state of multiple buttons)  
-+H48CFrame : Gets raised for each iteration of the Accelerometers readings.  
++ RawFrame : gets raised for each buffer received from the serialport.  
++ BinaryFrame : Gets raised for each instance of 1 & 0 received (i.e. a single button)  
++ BinaryArrayFrame : Gets raised for arrays of binaries received (i.e. state of multiple buttons)  
++ H48CFrame : Gets raised for each iteration of the Accelerometers readings.  
 
