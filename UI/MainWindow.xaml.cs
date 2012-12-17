@@ -43,12 +43,12 @@ namespace PortScanner
             InitializeComponent();
             if (!DesignerProperties.GetIsInDesignMode(this))
             {
-                port = new PropellerSerialPort(13, "COM13", 9600, new List<IPropellerFrame> { /*new H48CFrame(), new BinaryFrame(), */new BinaryArrayFrame()/*, new RawFrame()*/ });
+                port = new PropellerSerialPort(13, "COM13", 9600, new List<IPropellerFrame> { new H48CFrame(), new BinaryFrame()/*, new BinaryArrayFrame(), new RawFrame()*/ });
                 
                 DataVM = new DataLoggerViewModel(port);
-                //H48CModel = new H48CViewModel(port);
-                //binaryVM = new BinaryViewModel(port);
-                boolArrayVM = new BoolArrayViewModel(port);
+                H48CModel = new H48CViewModel(port);
+                binaryVM = new BinaryViewModel(port);
+                //boolArrayVM = new BoolArrayViewModel(port);
                 vm = new PortViewModel(port);
 
                 this.DataContext = vm;
@@ -57,6 +57,7 @@ namespace PortScanner
                 //BinaryControl.DataContext = binaryVM;
                 ListenerControl.DataContext = DataVM;
                 KeyboardControl.DataContext = boolArrayVM;
+                /*
                 boolArrayVM.OnKeyPressed += delegate(string key)
                 {
                     if (key == "SPACE")
@@ -68,10 +69,10 @@ namespace PortScanner
                     else
                         TextKeyInput.Text += key;
                 };
-
-                //H48CControl.DataContext = H48CModel;
-                //Cube.DataContext = H48CModel;
-                //Cube.Render();
+                */
+                H48CControl.DataContext = H48CModel;
+                Cube.DataContext = H48CModel;
+                Cube.Render();
             }
         }
     }
