@@ -7,7 +7,7 @@ This is a library to do framing from a propeller chip in C#.
 Examples include a 3D cube using an accelerometer and some basic binary frames for ex. lights.  
 Basically you just write a new frame type for the data your emitting from your chip and use that to visualize your data in WPF.  
   
-<img src="https://github.com/nisbus/propeller.framer/blob/master/propeller%20UI.png"></img>  
+<img src="https://raw.github.com/nisbus/propeller.framer/master/propeller%20UI.png"></img>  
   
 A setup I use to test this interface is connect a H48C Accelerometer and load the H48C pulse.spin file onto the propeller.  
 Connect the propeller USB to your PC and start the demo project.  
